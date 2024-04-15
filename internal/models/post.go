@@ -1,13 +1,11 @@
 package models
 
-import (
-	"time"
-)
+import "time"
 
-type User struct {
+type Post struct {
 	ID        string    `json:"id"`
-	Username  string    `json:"username"`
-	Password  string    `json:"-"`
+	UserID    string    `json:"user_id"`
+	Text      string    `json:"text"`
 	CreatedAt time.Time `json:"created_at"`
 	UpdatedAt time.Time `json:"updated_at"`
 }
